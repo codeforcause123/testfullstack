@@ -13,7 +13,7 @@ frontendtest/coverage
 frontendtest/build
 
 # misc
-frontendtest/DS_Store
+frontendtest/.DS_Store
 frontendtest/.env.local
 frontendtest/.env.development.local
 frontendtest/.env.test.local
