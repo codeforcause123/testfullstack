@@ -1,8 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const app = express();
 const cors = require("cors");
+const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use((req, res, next) => {
@@ -10,7 +10,7 @@ app.use((req, res, next) => {
   next();
 });
 app.get("/api/data", (req, res) => {
-  res.json({ message: "Hello World!" });
+  res.json({ message: "Hello Everyone" });
 });
 app.listen(process.env.PORT, () => {
   console.log("Server Up and Running");
